@@ -44,7 +44,6 @@
 
 *And neither did I.*
 
-*Until a student with a blue pen behind her ear asked the question that shattered my entire career.*
 
 ---
 
