@@ -7,7 +7,7 @@
 
 Let's start with the most boring hill you can imagine:
 
- $$ U(w) = \frac{1}{2}w^2 $$
+$U(w) = \frac{1}{2}w^2$
 
 A parabola. A bowl. A single, perfect, boring minimum at $w=0$.
 
