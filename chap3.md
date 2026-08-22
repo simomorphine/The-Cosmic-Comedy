@@ -377,15 +377,6 @@ I turned to the class one last time.
 
 **Because that's how the universe learns.**
 
----
-
-## End of Chapter 3
-
----
-
-**In Chapter 4:** *The Thermodynamics of Generalization* — where we discover that temperature controls not just convergence, but how well the model performs on new data.
-
-*Aka: "Why Does My Model Work On Training Data But Fail On Everything Else?"*
 
 ---
 
