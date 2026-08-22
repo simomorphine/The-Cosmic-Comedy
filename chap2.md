@@ -354,7 +354,7 @@ $$P(w) = \frac{1}{Z}e^{-w^2/(2k_B T)}$$
 
 What is the variance of $w$?
 
-> *(Answer: $\text{Var}(w) = k_B T$. It's literally the temperature. You're welcome again.)*
+> *(Answer:* $\text{Var}(w) = k_B T$. *It's literally the temperature. You're welcome again.)*
 
 ---
 
