@@ -251,32 +251,13 @@ the quantum solution is:
 **Energy levels:**
 
 $$
-E_n
-===
-
-\hbar\omega
-\left(
-n+\frac{1}{2}
-\right),
-\qquad
-\omega=\sqrt{\frac{\lambda}{m}}
+E_n = \hbar\omega\left(n+\frac{1}{2}\right),\qquad\omega=\sqrt{\frac{\lambda}{m}}
 $$
 
 **Wavefunctions:**
 
 $$
-\psi_n(w)
-=========
-
-\frac{1}{\sqrt{2^n n!}}
-\left(
-\frac{m\omega}{\pi\hbar}
-\right)^{1/4}
-e^{-m\omega w^2/(2\hbar)}
-H_n
-\left(
-\sqrt{\frac{m\omega}{\hbar}}w
-\right)
+\psi_n(w) = \frac{1}{\sqrt{2^n n!}}\left(\frac{m\omega}{\pi\hbar}\right)^{1/4}e^{-m\omega w^2/(2\hbar)}H_n\left(\sqrt{\frac{m\omega{\hbar}}w\right)
 $$
 
 **What this means in ML:**
