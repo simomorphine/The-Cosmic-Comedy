@@ -4,15 +4,13 @@
 
 ## *In Which We Discover That the Universe Is Just a Neural Network*
 
----
-
 ### *6.1 The Big Bang of Initialization*
 
 The student with the blue pen found me in the observatory. It was 2 AM. I was staring at the stars.
 
 *"Professor,"* she whispered, *"what are you doing?"*
 
-I pointed at the sky.
+I pointed to the sky.
 
 *"I'm watching the universe train."*
 
@@ -46,24 +44,27 @@ What is the universe optimizing?
 
 **The cosmic loss function:**
 
-\[
-\boxed{\mathcal{L}_{\text{universe}} = -S_{\text{universe}}}
-\]
+$$
+\mathcal{L}_{\text{universe}}
+=============================
 
-**Where \( S_{\text{universe}} \) is the entropy of the universe.**
+-S_{\text{universe}}
+$$
 
-| Term | Meaning | ML Analog |
-|------|---------|-----------|
-| \( -S_{\text{universe}} \) | Negative entropy | Cross-entropy loss |
-| \( \nabla \mathcal{L}_{\text{universe}} \) | Force of gravity | Gradient |
-| \( \eta \) | Speed of light | Learning rate |
-| \( m \) | Mass | Curvature of loss landscape |
+**Where $S_{\text{universe}}$ is the entropy of the universe.**
+
+| Term                                  | Meaning          | ML Analog                   |
+| ------------------------------------- | ---------------- | --------------------------- |
+| $-S_{\text{universe}}$                | Negative entropy | Cross-entropy loss          |
+| $\nabla\mathcal{L}_{\text{universe}}$ | Force of gravity | Gradient                    |
+| $\eta$                                | Speed of light   | Learning rate               |
+| $m$                                   | Mass             | Curvature of loss landscape |
 
 **The second law of thermodynamics:**
 
-\[
-\boxed{\frac{dS_{\text{universe}}}{dt} \geq 0}
-\]
+$$
+\frac{dS_{\text{universe}}}{dt}\geq0
+$$
 
 **This is gradient descent!**
 
@@ -81,34 +82,58 @@ In ML, the weight space **expands** during training.
 
 **The cosmological scale factor:**
 
-\[
-\boxed{a(t) = \text{Size of the universe at time } t}
-\]
+$$
+a(t)
+====
+
+\text{Size of the universe at time }t
+$$
 
 **The weight space scale factor:**
 
-\[
-\boxed{s(t) = \text{Norm of the weights at time } t}
-\]
+$$
+s(t)
+====
 
-**The Friedman equation (cosmology):**
+\text{Norm of the weights at time }t
+$$
 
-\[
-\left( \frac{\dot{a}}{a} \right)^2 = \frac{8\pi G}{3} \rho - \frac{k}{a^2} + \frac{\Lambda}{3}
-\]
+**The Friedmann equation (cosmology):**
 
-**The Friedman equation (ML):**
+$$
+\left(\frac{\dot{a}}{a}\right)^2
+================================
 
-\[
-\boxed{\left( \frac{\dot{s}}{s} \right)^2 = \frac{2}{m} \mathcal{L}_{\text{train}} - \frac{\lambda}{s^2} + \frac{\eta}{3}}
-\]
+## \frac{8\pi G}{3}\rho
 
-| Cosmology | ML |
-|-----------|-----|
-| \( \dot{a}/a \) | Hubble parameter (expansion rate) | Weight growth rate |
-| \( \rho \) | Energy density | Training loss |
-| \( k \) | Curvature | Regularization |
-| \( \Lambda \) | Cosmological constant | Learning rate |
+\frac{k}{a^2}
++
+\frac{\Lambda}{3}
+$$
+
+**The Friedmann equation (ML):**
+
+$$
+\left(\frac{\dot{s}}{s}\right)^2
+================================
+
+## \frac{2}{m}\mathcal{L}_{\text{train}}
+
+\frac{\lambda}{s^2}
++
+\frac{\eta}{3}
+$$
+
+| Cosmology                    | ML                                |
+| ---------------------------- | --------------------------------- |
+| $\dot{a}/a$                  | Hubble parameter (expansion rate) |
+| $\rho$                       | Energy density                    |
+| $k$                          | Curvature                         |
+| $\Lambda$                    | Cosmological constant             |
+| $\dot{s}/s$                  | Weight growth rate                |
+| $\mathcal{L}_{\text{train}}$ | Training loss                     |
+| $\lambda$                    | Regularization                    |
+| $\eta$                       | Learning rate                     |
 
 **The cosmic joke:** Weight decay is just **dark energy** — it pushes weights to zero.
 
@@ -122,21 +147,24 @@ In ML, **early training** is a period of rapid learning.
 
 **Inflation equation:**
 
-\[
-\boxed{a(t) = a_0 e^{Ht}}
-\]
+$$
+a(t)=a_0e^{Ht}
+$$
 
 **Early training loss:**
 
-\[
-\boxed{\mathcal{L}(t) = \mathcal{L}_0 e^{-t/\tau}}
-\]
+$$
+\mathcal{L}(t)
+==============
 
-| Phase | Cosmology | ML |
-|-------|-----------|-----|
-| **Early** | Inflation | Rapid learning (high LR) |
-| **Middle** | Matter domination | Slow convergence (mid LR) |
-| **Late** | Dark energy domination | Fine-tuning (low LR) |
+\mathcal{L}_0e^{-t/\tau}
+$$
+
+| Phase      | Cosmology              | ML                        |
+| ---------- | ---------------------- | ------------------------- |
+| **Early**  | Inflation              | Rapid learning (high LR)  |
+| **Middle** | Matter domination      | Slow convergence (mid LR) |
+| **Late**   | Dark energy domination | Fine-tuning (low LR)      |
 
 **The insight:** The universe and ML models both go through **phase transitions**.
 
@@ -150,25 +178,28 @@ In ML, the **initialization** is the "leftover" from random initialization.
 
 **CMB temperature:**
 
-\[
-T_{\text{CMB}} = 2.725 \text{ K}
-\]
+$$
+T_{\text{CMB}}=2.725,\text{K}
+$$
 
 **Initialization variance:**
 
-\[
-\boxed{\sigma_{\text{init}}^2 = \frac{2}{n_{\text{in}} + n_{\text{out}}}}
-\]
+$$
+\sigma_{\text{init}}^2
+======================
 
-**(Xavier initialization)**
+\frac{2}{n_{\text{in}}+n_{\text{out}}}
+$$
+
+**Xavier initialization**
 
 **The analogy:**
 
-| Cosmology | ML |
-|-----------|-----|
-| CMB temperature | Initialization variance |
-| CMB fluctuations | Random initialization |
-| CMB anisotropies | Weight distribution |
+| Cosmology        | ML                      |
+| ---------------- | ----------------------- |
+| CMB temperature  | Initialization variance |
+| CMB fluctuations | Random initialization   |
+| CMB anisotropies | Weight distribution     |
 
 **The cosmic joke:** The universe started with tiny fluctuations. So does your model.
 
@@ -182,22 +213,32 @@ In ML, gradient descent pulls weights into **patterns, features, and representat
 
 **The structure formation equation:**
 
-\[
-\boxed{\frac{\partial^2 \delta}{\partial t^2} + 2H \frac{\partial \delta}{\partial t} = 4\pi G \rho \delta}
-\]
+$$
+\frac{\partial^2\delta}{\partial t^2}
++
+2H\frac{\partial\delta}{\partial t}
+===================================
+
+4\pi G\rho\delta
+$$
 
 **The ML equivalent:**
 
-\[
-\boxed{\frac{\partial^2 w}{\partial t^2} + \gamma \frac{\partial w}{\partial t} = -\nabla U(w)}
-\]
+$$
+\frac{\partial^2w}{\partial t^2}
++
+\gamma\frac{\partial w}{\partial t}
+===================================
 
-| Cosmology | ML |
-|-----------|-----|
-| \( \delta \) (overdensity) | Weight magnitude |
-| \( H \) (Hubble parameter) | Friction coefficient |
-| \( G \) (gravitational constant) | Learning rate |
-| \( \rho \) (density) | Loss gradient |
+-\nabla U(w)
+$$
+
+| Cosmology                    | ML                   |
+| ---------------------------- | -------------------- |
+| $\delta$ (overdensity)       | Weight magnitude     |
+| $H$ (Hubble parameter)       | Friction coefficient |
+| $G$ (gravitational constant) | Learning rate        |
+| $\rho$ (density)             | Loss gradient        |
 
 **The insight:** Gradient descent is **cosmic structure formation** in weight space.
 
@@ -207,26 +248,34 @@ In ML, gradient descent pulls weights into **patterns, features, and representat
 
 **Dark energy** is causing the universe's expansion to accelerate.
 
-**Momentum** is causing your model's weights to "accelerate" in a direction.
+**Momentum** is causing your model's weights to accelerate in a direction.
 
 **Dark energy equation of state:**
 
-\[
-\boxed{w_{\text{DE}} = \frac{p}{\rho} = -1}
-\]
+$$
+w_{\text{DE}}
+=============
+
+# \frac{p}{\rho}
+
+-1
+$$
 
 **Momentum coefficient:**
 
-\[
-\boxed{\beta = \text{How much previous gradient influences current step}}
-\]
+$$
+\beta
+=====
 
-| Cosmology | ML |
-|-----------|-----|
-| Dark energy | Momentum |
-| Cosmological constant | Momentum coefficient |
+\text{How much previous gradient influences the current step}
+$$
+
+| Cosmology              | ML                    |
+| ---------------------- | --------------------- |
+| Dark energy            | Momentum              |
+| Cosmological constant  | Momentum coefficient  |
 | Expansion acceleration | Gradient acceleration |
-| \( w_{\text{DE}} = -1 \) | \( \beta \approx 0.9 \) |
+| $w_{\text{DE}}=-1$     | $\beta\approx0.9$     |
 
 **The cosmic joke:** Dark energy and momentum are the same thing — they both **accelerate** the system.
 
@@ -240,22 +289,26 @@ In ML, **convergence** is when the model stops improving.
 
 **Heat death equation:**
 
-\[
-\boxed{\frac{dS}{dt} = 0 \quad \Rightarrow \quad \text{Maximum entropy}}
-\]
+$$
+\frac{dS}{dt}=0
+\quad\Rightarrow\quad
+\text{Maximum entropy}
+$$
 
 **Convergence condition:**
 
-\[
-\boxed{\nabla \mathcal{L} = 0 \quad \Rightarrow \quad \text{Minimum loss}}
-\]
+$$
+\nabla\mathcal{L}=0
+\quad\Rightarrow\quad
+\text{Minimum loss}
+$$
 
-| Cosmology | ML |
-|-----------|-----|
-| Heat death | Convergence |
-| Maximum entropy | Minimum loss |
-| No more stars | No more learning |
-| Equilibrium | Local minimum |
+| Cosmology       | ML               |
+| --------------- | ---------------- |
+| Heat death      | Convergence      |
+| Maximum entropy | Minimum loss     |
+| No more stars   | No more learning |
+| Equilibrium     | Local minimum    |
 
 **The insight:** Both the universe and ML models head toward **equilibrium**.
 
@@ -269,22 +322,26 @@ In ML, **hyperparameter tuning** is exploring many models with different paramet
 
 **The multiverse equation:**
 
-\[
-\boxed{\text{Number of universes} \propto e^{S}}
-\]
+$$
+\text{Number of universes}
+\propto
+e^S
+$$
 
 **The hyperparameter space:**
 
-\[
-\boxed{\text{Number of models} \propto e^{\text{Complexity}}}
-\]
+$$
+\text{Number of models}
+\propto
+e^{\text{Complexity}}
+$$
 
-| Cosmology | ML |
-|-----------|-----|
-| Multiverse | Hyperparameter search |
+| Cosmology                    | ML                       |
+| ---------------------------- | ------------------------ |
+| Multiverse                   | Hyperparameter search    |
 | Different physical constants | Different learning rates |
-| Different laws of physics | Different optimizers |
-| Anthropic principle | Model selection |
+| Different laws of physics    | Different optimizers     |
+| Anthropic principle          | Model selection          |
 
 **The cosmic joke:** We're just hyperparameter tuning the universe.
 
@@ -298,24 +355,24 @@ In ML, the **no-free-lunch theorem** says no model works for all problems.
 
 **The anthropic principle:**
 
-\[
-\boxed{\text{We observe the universe because it allows observers.}}
-\]
+$$
+\text{We observe the universe because it allows observers.}
+$$
 
 **The no-free-lunch theorem:**
 
-\[
-\boxed{\text{No model works for all problems.}}
-\]
+$$
+\text{No model works for all problems.}
+$$
 
 **The analogy:**
 
-| Cosmology | ML |
-|-----------|-----|
-| Anthropic principle | No-free-lunch theorem |
-| Observers exist because | Models work because |
-| Universe is fine-tuned | Data is fine-tuned |
-| Selection bias | Data bias |
+| Cosmology               | ML                    |
+| ----------------------- | --------------------- |
+| Anthropic principle     | No-free-lunch theorem |
+| Observers exist because | Models work because   |
+| Universe is fine-tuned  | Data is fine-tuned    |
+| Selection bias          | Data bias             |
 
 **The cosmic joke:** The universe is just a model that works for the data it was trained on.
 
@@ -323,42 +380,43 @@ In ML, the **no-free-lunch theorem** says no model works for all problems.
 
 ### *6.11 The Homework Assignment*
 
----
-
-> **Problem 1:** Show that the Friedman equation for weight space is:
-> 
-> \[
-> \left( \frac{\dot{s}}{s} \right)^2 = \frac{2}{m} \mathcal{L}_{\text{train}} - \frac{\lambda}{s^2} + \frac{\eta}{3}
-> \]
-> 
+> **Problem 1:** Show that the Friedmann equation for weight space is:
+>
+> $$
+> \left(\frac{\dot{s}}{s}\right)^2
+> ================================
+>
+> ## \frac{2}{m}\mathcal{L}_{\text{train}}
+>
+> \frac{\lambda}{s^2}
+> +
+> \frac{\eta}{3}
+> $$
+>
 > **Derive this from Newton's law with friction.**
 
----
-
 > **Problem 2:** Compare the heat death of the universe to the convergence of gradient descent.
-> 
-> - What happens at \( t \to \infty \) in both cases?
-> - Why can't you reach absolute zero in either?
-
----
+>
+> * What happens at $t\to\infty$ in both cases?
+> * Why can't you reach absolute zero in either?
 
 > **Problem 3:** Show that the early training phase is like cosmic inflation:
-> 
-> - Loss decays as \( \mathcal{L}(t) = \mathcal{L}_0 e^{-t/\tau} \)
-> - Weight norm grows as \( s(t) = s_0 e^{Ht} \)
-> 
-> **Find the relationship between \( \tau \) and \( H \).**
+>
+> * Loss decays as $\mathcal{L}(t)=\mathcal{L}_0e^{-t/\tau}$
+> * Weight norm grows as $s(t)=s_0e^{Ht}$
+>
+> **Find the relationship between $\tau$ and $H$.**
 
----
-
-> **Problem 4 (Extra Credit):**
-> 
+> **Problem 4 — Extra Credit:**
+>
 > Derive the multiverse distribution over hyperparameters:
-> 
-> \[
-> P(\eta, \gamma, \beta) \propto e^{-\mathcal{L}(\eta, \gamma, \beta)}
-> \]
-> 
+>
+> $$
+> P(\eta,\gamma,\beta)
+> \propto
+> e^{-\mathcal{L}(\eta,\gamma,\beta)}
+> $$
+>
 > **Interpretation:** Why do some hyperparameters work better than others?
 
 ---
@@ -393,27 +451,39 @@ She paused.
 
 I wrote on the board, beneath the stars:
 
-\[
-\boxed{\mathcal{L}_{\text{universe}} = \frac{1}{2} \int \left( \frac{\partial \phi}{\partial t} \right)^2 + (\nabla \phi)^2 + V(\phi) \, d^3x}
-\]
+$$
+\mathcal{L}_{\text{universe}}
+=============================
+
+\frac{1}{2}
+\int
+\left(
+\frac{\partial\phi}{\partial t}
+\right)^2
++
+(\nabla\phi)^2
++
+V(\phi)
+,d^3x
+$$
 
 **The cosmic Lagrangian:**
 
-\[
-\boxed{\text{The universe is minimizing its loss function.}}
-\]
+$$
+\text{The universe is minimizing its loss function.}
+$$
 
-\[
-\boxed{\text{We're the gradients.}}
-\]
+$$
+\text{We're the gradients.}
+$$
 
-\[
-\boxed{\text{Learning is the force.}}
-\]
+$$
+\text{Learning is the force.}
+$$
 
-\[
-\boxed{\text{And the universe is training itself.}}
-\]
+$$
+\text{And the universe is training itself.}
+$$
 
 ---
 
@@ -458,18 +528,17 @@ I turned to the class, standing under the stars.
 ### 📝 *Teacher's Notes (Scribbled in the Margins)*
 
 > *"The universe is the largest neural network.*
-> 
+>
 > *We're its weights.*
-> 
+>
 > *Gravity is its loss function.*
-> 
+>
 > *Dark energy is its learning rate.*
-> 
+>
 > *And the cosmic joke?*
-> 
+>
 > *We thought we invented optimization.*
-> 
+>
 > *The universe was doing it all along.*
-> 
+>
 > *And it's been doing it for 13.8 billion years."*
-
