@@ -89,19 +89,13 @@ Let's design a **tunneling optimizer**.
 **Classical gradient descent:**
 
 $$
-w_{k+1}
-=======
-
-w_k-\eta\nabla U(w_k)
+w_{k+1} = w_k-\eta\nabla U(w_k)
 $$
 
 **Quantum tunneling version:**
 
 $$
-w_{k+1}
-=======
-
-w_k-\eta\nabla U(w_k)+\sigma\xi_k
+w_{k+1} = w_k-\eta\nabla U(w_k)+\sigma\xi_k
 $$
 
 where $\xi_k$ is **Lévy noise** (heavy-tailed jumps).
