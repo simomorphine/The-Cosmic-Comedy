@@ -80,11 +80,11 @@ This is called **quantum tunneling**.
 Let's design a **tunneling optimizer**.
 
 **Classical gradient descent:**
-
+$$
 [
 w_{k+1} = w_k - \eta \nabla U(w_k)
 ]
-
+$$
 **Quantum tunneling version:**
 
 [
