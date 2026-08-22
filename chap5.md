@@ -325,7 +325,7 @@ $$
 w_{k+1} =
 w_k-\eta\nabla U(w_k)
 +
-\sigma\operatorname{Lévy}(\alpha)
+\sigma\\mathrm{Lévy}(\alpha)
 $$
 
 **Where:** $\alpha\in(0,2]$ controls the tail heaviness.
