@@ -129,15 +129,7 @@ $$
 Let's write the **Schrödinger equation** for a weight particle:
 
 $$
-i\hbar\frac{\partial\psi}{\partial t}
-=====================================
-
-\left(
--\frac{\hbar^2}{2m}
-\frac{\partial^2}{\partial w^2}
-+
-U(w)
-\right)\psi
+i\hbar\frac{\partial\psi}{\partial t} = \left(-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial w^2}+U(w)\right)\psi
 $$
 
 * $\psi(w,t)$: Wavefunction of the weight
