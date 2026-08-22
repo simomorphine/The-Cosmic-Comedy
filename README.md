@@ -7,14 +7,23 @@
 ## 📖 Prologue: The Joke
 
 > *A physicist walks into a machine learning conference.*
+> 
 > *The ML researcher says: "We're trying to find the minimum of this high-dimensional function."*
+> 
 > *The physicist says: "Oh, so you're doing thermodynamics. Let me tell you about entropy."*
+> 
 > *The ML researcher says: "No, we're doing gradient descent."*
+> 
 > *The physicist says: "Oh, so you're doing classical mechanics. Let me tell you about inertia."*
+> 
 > *The ML researcher says: "Actually, we use stochastic gradient descent."*
+> 
 > *The physicist says: "Oh, so you're doing statistical mechanics. Let me tell you about Brownian motion."*
+> 
 > *The ML researcher says: "But we use GPUs."*
+> 
 > *The physicist says: "That's just parallel universes. Let me tell you about the multiverse..."*
+> 
 
 **The cosmic joke?**
 
