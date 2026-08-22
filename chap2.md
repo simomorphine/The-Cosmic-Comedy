@@ -330,7 +330,7 @@ where $\omega_1 = \sqrt{\omega_0^2 - \beta^2}$.
 
 **Bonus:** At what $\beta$ does the system converge fastest without oscillating?
 
-> *(Answer: $\beta = \omega_0$. You're welcome.)*
+> *(Answer:* $\beta = \omega_0$. *You're welcome.)*
 
 ---
 
