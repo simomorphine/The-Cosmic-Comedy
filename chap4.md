@@ -256,7 +256,7 @@ $$\boxed{\text{No universal optimizer exists.}}$$
 >
 > is minimized.
 
-*(Answer: $T = 10$. You're welcome. Also, congrats, you just did physics.)*
+*(Answer:* $T = 10$. *You're welcome. Also, congrats, you just did physics.)*
 
 ---
 
@@ -267,7 +267,7 @@ $$\boxed{\text{No universal optimizer exists.}}$$
 >
 > Find the optimal $L_2$ regularization using the Nishimori line.
 
-*(Answer: $\lambda = 0.1$. That was easy. Your model thanks you.)*
+*(Answer:* $\lambda = 0.1$. *That was easy. Your model thanks you.)*
 
 ---
 
