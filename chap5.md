@@ -324,9 +324,7 @@ $$
 **Algorithm:**
 
 $$
-w_{k+1}
-=======
-
+w_{k+1} =
 w_k-\eta\nabla U(w_k)
 +
 \sigma\operatorname{Lévy}(\alpha)
