@@ -54,10 +54,10 @@ $$
 
 | QFT Term | ML Term | Meaning |
 |----------|---------|---------|
-| \( \mathcal{D}\phi \) | \( \mathcal{D}w \) | Sum over all possible weights |
-| \( S[\phi] \) | \( \mathcal{L}[w] \) | Action / Loss function |
-| \( \hbar \) | \( 1/\beta \) | Quantum of action / Temperature |
-| \( i \) | - | Real vs imaginary time (Wick rotation) |
+| $\( \mathcal{D}\phi \)$ | $\( \mathcal{D}w \)$ | Sum over all possible weights |
+| $\( S[\phi] \)$ | $\( \mathcal{L}[w] \)$ | Action / Loss function |
+| $\( \hbar \)$ | $\( 1/\beta \)$ | Quantum of action / Temperature |
+| $\( i \)$ | - | Real vs imaginary time (Wick rotation) |
 
 **The Wick rotation:** In QFT, time is imaginary (\( t \to i\tau \)). This turns quantum mechanics into statistical mechanics.
 
