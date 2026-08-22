@@ -295,9 +295,7 @@ Here are some **quantum-inspired optimizers**.
 **Algorithm:**
 
 $$
-w_{k+1}
-=======
-
+w_{k+1} =
 w_k-\eta\nabla U(w_k)
 +
 \sqrt{\eta T_k}\xi_k
