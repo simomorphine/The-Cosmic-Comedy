@@ -27,8 +27,8 @@ I walked to the board and drew:
                  /      \
                 /   🎯   \
                /    🔒    \
-              /            \
-             /   🌀   🌀      \
+              /             \
+             /   🌀   🌀     \
             /                  \
            /____________________\
 ```
@@ -345,9 +345,7 @@ $$
 **Algorithm:**
 
 $$
-\nabla_{\text{quantum}}U
-========================
-
+\nabla_{\text{quantum}}U =
 \frac{
 \int\nabla U(w)|\psi(w)|^2,dw
 }{
