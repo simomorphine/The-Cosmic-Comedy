@@ -304,9 +304,7 @@ $$
 **Cooling schedule:**
 
 $$
-T_k
-===
-
+T_k =
 T_0
 \left(
 1-\frac{k}{K}
