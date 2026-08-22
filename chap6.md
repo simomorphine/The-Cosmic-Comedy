@@ -227,17 +227,13 @@ $$
 **Dark energy equation of state:**
 
 $$
-w_{\text{DE}} =
-\frac{p}{\rho}
--1
+w_{\text{DE}} = \frac{p}{\rho}-1
 $$
 
 **Momentum coefficient:**
 
 $$
-\beta
-=
-\text{How much previous gradient influences the current step}
+\beta = \text{How much previous gradient influences the current step}
 $$
 
 | Cosmology              | ML                    |
