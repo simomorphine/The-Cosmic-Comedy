@@ -339,7 +339,11 @@ where $\omega_1 = \sqrt{\omega_0^2 - \beta^2}$.
 Derive the force for the Huber loss:
 
 $$
-\ell = \begin{cases} \frac{1}{2}(y - \hat{y})^2 & \text{if } |y - \hat{y}| \leq \delta \\ \delta(|y - \hat{y}| - \frac{\delta}{2}) <br> & \text{if } |y - \hat{y}| > \delta \end{cases}
+\ell =
+\begin{cases}
+\frac{1}{2}(y-\hat{y})^2 & \text{if } |y-\hat{y}| \leq \delta \\
+\delta\left(|y-\hat{y}|-\frac{\delta}{2}\right) & \text{if } |y-\hat{y}| > \delta
+\end{cases}
 $$
 
 **Interpretation:** What kind of spring is this?
