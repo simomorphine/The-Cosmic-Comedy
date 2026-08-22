@@ -45,9 +45,7 @@ What is the universe optimizing?
 **The cosmic loss function:**
 
 $$
-\mathcal{L}_{\text{universe}}
-=============================
-
+\mathcal{L}_{\text{universe}} =
 -S_{\text{universe}}
 $$
 
@@ -83,29 +81,22 @@ In ML, the weight space **expands** during training.
 **The cosmological scale factor:**
 
 $$
-a(t)
-====
-
+a(t) =
 \text{Size of the universe at time }t
 $$
 
 **The weight space scale factor:**
 
 $$
-s(t)
-====
-
+s(t) =
 \text{Norm of the weights at time }t
 $$
 
 **The Friedmann equation (cosmology):**
 
 $$
-\left(\frac{\dot{a}}{a}\right)^2
-================================
-
-## \frac{8\pi G}{3}\rho
-
+\left(\frac{\dot{a}}{a}\right)^2 =
+\frac{8\pi G}{3}\rho
 \frac{k}{a^2}
 +
 \frac{\Lambda}{3}
@@ -114,11 +105,8 @@ $$
 **The Friedmann equation (ML):**
 
 $$
-\left(\frac{\dot{s}}{s}\right)^2
-================================
-
-## \frac{2}{m}\mathcal{L}_{\text{train}}
-
+\left(\frac{\dot{s}}{s}\right)^2 =
+\frac{2}{m}\mathcal{L}_{\text{train}}
 \frac{\lambda}{s^2}
 +
 \frac{\eta}{3}
@@ -154,9 +142,7 @@ $$
 **Early training loss:**
 
 $$
-\mathcal{L}(t)
-==============
-
+\mathcal{L}(t) =
 \mathcal{L}_0e^{-t/\tau}
 $$
 
@@ -185,9 +171,7 @@ $$
 **Initialization variance:**
 
 $$
-\sigma_{\text{init}}^2
-======================
-
+\sigma_{\text{init}}^2 =
 \frac{2}{n_{\text{in}}+n_{\text{out}}}
 $$
 
@@ -217,8 +201,7 @@ $$
 \frac{\partial^2\delta}{\partial t^2}
 +
 2H\frac{\partial\delta}{\partial t}
-===================================
-
+=
 4\pi G\rho\delta
 $$
 
@@ -228,8 +211,7 @@ $$
 \frac{\partial^2w}{\partial t^2}
 +
 \gamma\frac{\partial w}{\partial t}
-===================================
-
+=
 -\nabla U(w)
 $$
 
@@ -253,11 +235,8 @@ $$
 **Dark energy equation of state:**
 
 $$
-w_{\text{DE}}
-=============
-
-# \frac{p}{\rho}
-
+w_{\text{DE}} =
+\frac{p}{\rho}
 -1
 $$
 
@@ -265,8 +244,7 @@ $$
 
 $$
 \beta
-=====
-
+=
 \text{How much previous gradient influences the current step}
 $$
 
@@ -382,16 +360,13 @@ $$
 
 > **Problem 1:** Show that the Friedmann equation for weight space is:
 >
-> $$
-> \left(\frac{\dot{s}}{s}\right)^2
-> ================================
->
-> ## \frac{2}{m}\mathcal{L}_{\text{train}}
->
-> \frac{\lambda}{s^2}
-> +
-> \frac{\eta}{3}
-> $$
+$$
+\left(\frac{\dot{s}}{s}\right)^2 =
+\frac{2}{m}\mathcal{L}_{\text{train}}
+\frac{\lambda}{s^2}
++
+\frac{\eta}{3}
+$$
 >
 > **Derive this from Newton's law with friction.**
 
@@ -452,9 +427,7 @@ She paused.
 I wrote on the board, beneath the stars:
 
 $$
-\mathcal{L}_{\text{universe}}
-=============================
-
+\mathcal{L}_{\text{universe}} =
 \frac{1}{2}
 \int
 \left(
