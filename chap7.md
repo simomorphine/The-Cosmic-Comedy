@@ -83,9 +83,9 @@ $$
 
 | Term | Meaning | Physics Analog |
 |------|---------|----------------|
-| \( \frac{1}{2}(\nabla w)^2 \) | Weight regularization | Kinetic energy of field |
-| \( V(w) \) | Activation function | Potential energy |
-| \( w \cdot \text{data} \) | Linear layer | Coupling to external source |
+| $\frac{1}{2}(\nabla w)^2$ | Weight regularization | Kinetic energy of field |
+| $V(w)$ | Activation function | Potential energy |
+| $w \cdot \text{data}$ | Linear layer | Coupling to external source |
 
 **The equations of motion (Euler-Lagrange):**
 
