@@ -204,11 +204,7 @@ $$
 **The ML equivalent:**
 
 $$
-\frac{\partial^2w}{\partial t^2}
-+
-\gamma\frac{\partial w}{\partial t}
-=
--\nabla U(w)
+\frac{\partial^2w}{\partial t^2} + \gamma\frac{\partial w}{\partial t} = -\nabla U(w)
 $$
 
 | Cosmology                    | ML                   |
