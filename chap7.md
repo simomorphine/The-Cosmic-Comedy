@@ -192,7 +192,7 @@ $$
 \boxed{w_{ij} \to \pi(w_{ij})}
 $$
 
-**Where \( \pi \) is any permutation of neurons.**
+**Where $\pi$ is any permutation of neurons.**
 
 **The gauge invariance:**
 
