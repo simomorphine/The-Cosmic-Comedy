@@ -59,7 +59,7 @@ $$
 | $\hbar$ | $1/\beta$ | Quantum of action / Temperature |
 | $i$ | - | Real vs imaginary time (Wick rotation) |
 
-**The Wick rotation:** In QFT, time is imaginary (\( t \to i\tau \)). This turns quantum mechanics into statistical mechanics.
+**The Wick rotation:** In QFT, time is imaginary ($ t \to i\tau $). This turns quantum mechanics into statistical mechanics.
 
 **In ML, this is just temperature:**
 
