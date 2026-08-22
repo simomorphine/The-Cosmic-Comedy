@@ -42,7 +42,7 @@ I froze.
 
 | Newton's Law     | ML Equivalent                     |
 | ---------------- | --------------------------------- |
-| ( F = ma )       | ( \Delta w = -\eta \nabla L )     |
+| ( F = ma )       | ( $\Delta w = -\eta \nabla L$ )     |
 | Inertia          | Momentum                          |
 | Friction         | Weight decay                      |
 | Thermal noise    | Mini-batch sampling               |
