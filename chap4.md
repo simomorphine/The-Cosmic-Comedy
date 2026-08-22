@@ -289,7 +289,7 @@ $$\boxed{\text{No universal optimizer exists.}}$$
 
 ### 4.11 The Student's Discovery (Aka "She's Getting Too Smart")
 
-The student with the blue pen was back. This time she looked excited. Like someone who had just seen the Matrix.
+The student with the blue pen was back. This time she looked excited. Like someone who had just seen the Matrix movie.
 
 *"Professor,"* she said, her eyes practically glowing, *"I think I understand."*
 
