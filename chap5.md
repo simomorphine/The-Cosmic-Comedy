@@ -460,9 +460,7 @@ The student with the blue pen was back. She had a glint in her eye.
 I wrote on the board:
 
 $$
-\psi(w,t)
-=========
-
+\psi(w,t) =
 \sum_n
 c_n\psi_n(w)e^{-iE_nt/\hbar}
 $$
@@ -470,18 +468,13 @@ $$
 **The wavefunction of a weight particle:**
 
 $$
-|\psi(w,t)|^2
-=============
-
-\text{Probability of finding the weight at }w\text{ at time }t
+|\psi(w,t)|^2 = \text{Probability of finding the weight at }w\text{ at time }t
 $$
 
 **The Schrödinger equation for learning:**
 
 $$
-i\hbar\frac{\partial\psi}{\partial t}
-=====================================
-
+i\hbar\frac{\partial\psi}{\partial t} =
 \left(
 -\frac{\hbar^2}{2m}
 \frac{\partial^2}{\partial w^2}
