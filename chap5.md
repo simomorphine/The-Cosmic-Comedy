@@ -418,20 +418,16 @@ $$
 >
 > Derive the quantum-classical transition condition:
 >
-> $$
-> \eta_{\text{critical}}
-> ======================
->
-> \frac{\hbar^2}{m\lambda}
-> $$
->
+$$
+\eta_{\text{critical}} = \frac{\hbar^2}{m\lambda}
+$$
 > **Hint:** Use the uncertainty principle:
 >
-> $$
-> \Delta w,\Delta p
-> \geq
-> \frac{\hbar}{2}
-> $$
+$$
+\Delta w,\Delta p
+\geq
+\frac{\hbar}{2}
+$$
 
 ---
 
