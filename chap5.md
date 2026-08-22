@@ -207,10 +207,7 @@ $$
 **The probability of escaping a local minimum:**
 
 $$
-P_{\text{escape}}
-=================
-
-1-e^{-\Gamma t}
+P_{\text{escape}} = 1-e^{-\Gamma t}
 $$
 
 **Time to escape:**
