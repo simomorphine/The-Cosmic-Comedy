@@ -307,9 +307,8 @@ $$
 
 > **Problem 1:** Show that the partition function of a neural network is:
 > 
-> $$
-> Z = \int \mathcal{D}w \, e^{-\beta \mathcal{L}[w]}
->
+$$
+Z = \int \mathcal{D}w \, e^{-\beta \mathcal{L}[w]}
 $$
 > 
 > **Interpretation:** What does this mean for training?
@@ -318,9 +317,8 @@ $$
 
 > **Problem 2:** Derive the effective action of a quadratic loss:
 > 
-> $$
-> \mathcal{L}(w) = \frac{1}{2} w^T H w
->
+$$
+\mathcal{L}(w) = \frac{1}{2} w^T H w
 $$
 > 
 > **What is the Hessian \( H \)?**
@@ -329,9 +327,8 @@ $$
 
 > **Problem 3:** Show that the permutation symmetry of neural networks leads to:
 > 
-> $$
-> \mathcal{L}_{\text{NN}}(\pi(w)) = \mathcal{L}_{\text{NN}}(w)
->
+$$
+\mathcal{L}_{\text{NN}}(\pi(w)) = \mathcal{L}_{\text{NN}}(w)
 $$
 > 
 > **Why is this problematic for optimization?**
