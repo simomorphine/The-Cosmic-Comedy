@@ -404,15 +404,13 @@ $$
 
 > **Problem 3:** Show that the ground state of the quantum harmonic oscillator is:
 >
-> $$
-> \psi_0(w)
-> =
->
-> \left(
-> \frac{m\omega}{\pi\hbar}
-> \right)^{1/4}
-> e^{-m\omega w^2/(2\hbar)}
-> $$
+$$
+\psi_0(w) =
+\left(
+\frac{m\omega}{\pi\hbar}
+\right)^{1/4}
+e^{-m\omega w^2/(2\hbar)}
+$$
 >
 > **Interpretation:** What is the ML equivalent?
 
