@@ -198,11 +198,7 @@ In ML, gradient descent pulls weights into **patterns, features, and representat
 **The structure formation equation:**
 
 $$
-\frac{\partial^2\delta}{\partial t^2}
-+
-2H\frac{\partial\delta}{\partial t}
-=
-4\pi G\rho\delta
+\frac{\partial^2\delta}{\partial t^2} + 2H\frac{\partial\delta}{\partial t} = 4\pi G\rho\delta
 $$
 
 **The ML equivalent:**
