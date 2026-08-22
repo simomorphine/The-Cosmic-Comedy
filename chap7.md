@@ -18,9 +18,9 @@ The student with the blue pen was sitting in my office at 3 AM, surrounded by em
 
 She handed me the paper. On it was written:
 
-\[
+$$
 \boxed{Z = \int \mathcal{D}w \, e^{-S[w]}}
-\]
+$$
 
 *"This,"* she said, *"is the partition function of a neural network."*
 
@@ -42,15 +42,15 @@ In **quantum field theory (QFT)** , the **path integral** is the sum over all po
 
 **The partition function:**
 
-\[
+$$
 \boxed{Z = \int \mathcal{D}\phi \, e^{iS[\phi]/\hbar}}
-\]
+$$
 
 **In ML, this becomes:**
 
-\[
+$$
 \boxed{Z_{\text{ML}} = \int \mathcal{D}w \, e^{-\beta \mathcal{L}[w]}}
-\]
+$$
 
 | QFT Term | ML Term | Meaning |
 |----------|---------|---------|
@@ -63,9 +63,9 @@ In **quantum field theory (QFT)** , the **path integral** is the sum over all po
 
 **In ML, this is just temperature:**
 
-\[
+$$
 \boxed{\tau = \frac{1}{k_B T}}
-\]
+$$
 
 **The cosmic joke:** Training a neural network is just doing a **path integral** over weight space.
 
@@ -75,9 +75,9 @@ In **quantum field theory (QFT)** , the **path integral** is the sum over all po
 
 Every neural network has a **Lagrangian**:
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{NN}} = \int d^d x \, \left( \frac{1}{2}(\nabla w)^2 + V(w) + w \cdot \text{data} \right)}
-\]
+$$
 
 **The terms:**
 
@@ -89,9 +89,9 @@ Every neural network has a **Lagrangian**:
 
 **The equations of motion (Euler-Lagrange):**
 
-\[
+$$
 \boxed{\frac{\partial \mathcal{L}}{\partial w} - \nabla \cdot \frac{\partial \mathcal{L}}{\partial(\nabla w)} = 0}
-\]
+$$
 
 **This is backpropagation!**
 
@@ -121,15 +121,15 @@ In ML, **deep learning** is exactly the same:
 
 **The RG equation:**
 
-\[
+$$
 \boxed{\frac{dg}{d\log \mu} = \beta(g)}
-\]
+$$
 
 **The ML equivalent:**
 
-\[
+$$
 \boxed{\frac{d\eta}{dt} = -\alpha \eta + \beta \eta^2}
-\]
+$$
 
 **What happens:**
 
@@ -151,21 +151,21 @@ In ML, **large neural networks** become **effective theories** of the data.
 
 **The effective action:**
 
-\[
+$$
 \boxed{\Gamma[\phi] = \sum_{n=0}^{\infty} \frac{1}{n!} \int \Gamma^{(n)} \phi^n}
-\]
+$$
 
 **The ML equivalent:**
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{eff}}(w) = \sum_{n=0}^{\infty} \frac{1}{n!} \frac{\partial^n \mathcal{L}}{\partial w^n} (w - w^*)^n}
-\]
+$$
 
 **Truncation at \( n=2 \):**
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{eff}}(w) \approx \frac{1}{2} w^T H w}
-\]
+$$
 
 **This is the Hessian approximation!**
 
@@ -188,17 +188,17 @@ In ML, **neural networks** are invariant under certain transformations:
 
 **Permutation symmetry:**
 
-\[
+$$
 \boxed{w_{ij} \to \pi(w_{ij})}
-\]
+$$
 
 **Where \( \pi \) is any permutation of neurons.**
 
 **The gauge invariance:**
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{NN}}(\pi(w)) = \mathcal{L}_{\text{NN}}(w)}
-\]
+$$
 
 **This is why training is hard!**
 
@@ -228,9 +228,9 @@ In ML, **local minima** are topological defects in the loss landscape.
 
 **The instanton solution:**
 
-\[
+$$
 \boxed{w(t) = w_0 \tanh\left( \frac{t - t_0}{\tau} \right)}
-\]
+$$
 
 **This is the escape path from a local minimum!**
 
@@ -253,17 +253,17 @@ In ML, **backpropagation** diagrams represent gradient flow.
 
 **The Feynman rule for backpropagation:**
 
-\[
+$$
 \boxed{\frac{\partial \mathcal{L}}{\partial w} = \sum_{\text{paths}} \frac{\partial \mathcal{L}}{\partial \hat{y}} \prod_{\text{layers}} \frac{\partial \hat{y}_{l+1}}{\partial \hat{y}_l} \frac{\partial \hat{y}_l}{\partial w_l}}
-\]
+$$
 
 **This is the chain rule!**
 
 **In QFT language:**
 
-\[
+$$
 \boxed{\nabla_w \mathcal{L} = \sum_{\text{paths}} \Gamma \cdot G \cdot \Gamma}
-\]
+$$
 
 | QFT | ML |
 |-----|-----|
@@ -293,9 +293,9 @@ In ML, **representation learning** relates the data manifold to the learned repr
 
 **The dictionary:**
 
-\[
+$$
 \boxed{\text{Gravity in weight space} = \text{Learning on data space}}
-\]
+$$
 
 **The cosmic joke:** Your neural network is a **hologram** of the data.
 
@@ -307,9 +307,10 @@ In ML, **representation learning** relates the data manifold to the learned repr
 
 > **Problem 1:** Show that the partition function of a neural network is:
 > 
-> \[
+> $$
 > Z = \int \mathcal{D}w \, e^{-\beta \mathcal{L}[w]}
-> \]
+>
+$$
 > 
 > **Interpretation:** What does this mean for training?
 
@@ -317,9 +318,10 @@ In ML, **representation learning** relates the data manifold to the learned repr
 
 > **Problem 2:** Derive the effective action of a quadratic loss:
 > 
-> \[
+> $$
 > \mathcal{L}(w) = \frac{1}{2} w^T H w
-> \]
+>
+$$
 > 
 > **What is the Hessian \( H \)?**
 
@@ -327,9 +329,10 @@ In ML, **representation learning** relates the data manifold to the learned repr
 
 > **Problem 3:** Show that the permutation symmetry of neural networks leads to:
 > 
-> \[
+> $$
 > \mathcal{L}_{\text{NN}}(\pi(w)) = \mathcal{L}_{\text{NN}}(w)
-> \]
+>
+$$
 > 
 > **Why is this problematic for optimization?**
 
@@ -371,33 +374,33 @@ The student with the blue pen was back in my office. She looked... different.
 
 I wrote on the board:
 
-\[
+$$
 \boxed{Z_{\text{universe}} = \int \mathcal{D}\phi \, e^{-S[\phi]}}
-\]
+$$
 
 **The path integral of the cosmos:**
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{universe}} = \frac{1}{2}(\nabla \phi)^2 + V(\phi) + \phi \cdot J}
-\]
+$$
 
 **And the cosmic truth:**
 
-\[
+$$
 \boxed{\text{The universe is learning itself.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{We're the fields.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{Data is the source.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{And learning is the path integral.}}
-\]
+$$
 
 ---
 
