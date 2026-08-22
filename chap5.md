@@ -59,17 +59,24 @@ This is called **quantum tunneling**.
 
 **The probability of tunneling:**
 
-[
-\boxed{P_{\text{tunnel}} \propto \exp\left( -\frac{2}{\hbar} \int \sqrt{2m(U(x) - E)} , dx \right)}
-]
+$$
+P_{\text{tunnel}}
+\propto
+\exp\left(
+-\frac{2}{\hbar}
+\int
+\sqrt{2m\left(U(x)-E\right)}
+,dx
+\right)
+$$
 
-| Term        | Meaning                               | ML Analog                   |
-| ----------- | ------------------------------------- | --------------------------- |
-| ( \hbar )   | Planck's constant (quantum of action) | Learning rate / Temperature |
-| ( m )       | Mass of particle                      | Curvature of loss landscape |
-| ( U(x) )    | Potential energy                      | Loss function               |
-| ( E )       | Energy of particle                    | Current loss value          |
-| ( \int dx ) | Width of the barrier                  | Distance to better minimum  |
+| Term      | Meaning                               | ML Analog                   |
+| --------- | ------------------------------------- | --------------------------- |
+| $\hbar$   | Planck's constant (quantum of action) | Learning rate / temperature |
+| $m$       | Mass of particle                      | Curvature of loss landscape |
+| $U(x)$    | Potential energy                      | Loss function               |
+| $E$       | Energy of particle                    | Current loss value          |
+| $\int dx$ | Width of the barrier                  | Distance to better minimum  |
 
 **The cosmic joke:** In ML, we can **simulate** quantum tunneling by adding noise, momentum, or using special optimizers.
 
@@ -80,18 +87,24 @@ This is called **quantum tunneling**.
 Let's design a **tunneling optimizer**.
 
 **Classical gradient descent:**
+
 $$
-[
-w_{k+1} = w_k - \eta \nabla U(w_k)
-]
+w_{k+1}
+=======
+
+w_k-\eta\nabla U(w_k)
 $$
+
 **Quantum tunneling version:**
 
-[
-\boxed{w_{k+1} = w_k - \eta \nabla U(w_k) + \sigma \cdot \xi_k}
-]
+$$
+w_{k+1}
+=======
 
-where ( \xi_k ) is **Lévy noise** (heavy-tailed jumps).
+w_k-\eta\nabla U(w_k)+\sigma\xi_k
+$$
+
+where $\xi_k$ is **Lévy noise** (heavy-tailed jumps).
 
 **Why Lévy noise?**
 
@@ -103,9 +116,13 @@ where ( \xi_k ) is **Lévy noise** (heavy-tailed jumps).
 
 **Lévy noise:**
 
-[
-P(\xi) \propto \frac{1}{|\xi|^{1+\alpha}}, \quad 0 < \alpha < 2
-]
+$$
+P(\xi)
+\propto
+\frac{1}{|\xi|^{1+\alpha}},
+\qquad
+0<\alpha<2
+$$
 
 **The key:** The probability of a large jump decays as a **power law**, not exponentially.
 
@@ -117,32 +134,39 @@ P(\xi) \propto \frac{1}{|\xi|^{1+\alpha}}, \quad 0 < \alpha < 2
 
 Let's write the **Schrödinger equation** for a weight particle:
 
-[
-i\hbar \frac{\partial \psi}{\partial t}
-=======================================
+$$
+i\hbar\frac{\partial\psi}{\partial t}
+=====================================
 
 \left(
--\frac{\hbar^2}{2m}\frac{\partial^2}{\partial w^2}
+-\frac{\hbar^2}{2m}
+\frac{\partial^2}{\partial w^2}
 +
 U(w)
 \right)\psi
-]
+$$
 
-* ( \psi(w,t) ): Wavefunction of the weight
-* ( |\psi|^2 ): Probability distribution of the weight
-* ( U(w) ): Loss landscape
+* $\psi(w,t)$: Wavefunction of the weight
+* $|\psi(w,t)|^2$: Probability distribution of the weight
+* $U(w)$: Loss landscape
 
 **The stationary states:**
 
-[
-\psi_n(w) \propto e^{-U(w)/(2k_B T)} \cdot \text{oscillations}
-]
+$$
+\psi_n(w)
+\propto
+e^{-U(w)/(2k_BT)}
+\cdot
+\text{oscillations}
+$$
 
 **The ground state (lowest energy):**
 
-[
-\boxed{\psi_0(w) \propto e^{-U(w)/(2k_B T)}}
-]
+$$
+\psi_0(w)
+\propto
+e^{-U(w)/(2k_BT)}
+$$
 
 **This is the Boltzmann distribution from Chapter 4!**
 
@@ -152,35 +176,35 @@ U(w)
 
 ### *5.5 The Tunneling Rate (WKB Approximation)*
 
-For a barrier of height ( \Delta U ) and width ( L ), the tunneling rate is:
+For a barrier of height $\Delta U$ and width $L$, the tunneling rate is:
 
-[
-\Gamma \propto
+$$
+\Gamma
+\propto
 \exp\left(
 -\frac{2L}{\hbar}
 \sqrt{2m(\Delta U-E)}
 \right)
-]
+$$
 
 **In ML terms:**
 
-[
-\boxed{
-\Gamma \propto
+$$
+\Gamma
+\propto
 \exp\left(
 -\frac{2L}{\eta}
 \sqrt{2\lambda(\Delta U-\mathcal{L})}
 \right)
-}
-]
+$$
 
-| ML Term         | Meaning                           |
-| --------------- | --------------------------------- |
-| ( \eta )        | Learning rate (quantum of action) |
-| ( \lambda )     | Curvature of the barrier          |
-| ( \Delta U )    | Height of the local minimum       |
-| ( \mathcal{L} ) | Current loss                      |
-| ( L )           | Distance to a better minimum      |
+| ML Term       | Meaning                           |
+| ------------- | --------------------------------- |
+| $\eta$        | Learning rate (quantum of action) |
+| $\lambda$     | Curvature of the barrier          |
+| $\Delta U$    | Height of the local minimum       |
+| $\mathcal{L}$ | Current loss                      |
+| $L$           | Distance to a better minimum      |
 
 **The key insight:**
 
@@ -196,35 +220,36 @@ For a barrier of height ( \Delta U ) and width ( L ), the tunneling rate is:
 
 **The probability of escaping a local minimum:**
 
-[
-P_{\text{escape}} = 1-e^{-\Gamma t}
-]
+$$
+P_{\text{escape}}
+=================
+
+1-e^{-\Gamma t}
+$$
 
 **Time to escape:**
 
-[
-\boxed{
+$$
 t_{\text{escape}}
 \propto
 \exp\left(
 \frac{2L}{\eta}
 \sqrt{2\lambda\Delta U}
 \right)
-}
-]
+$$
 
 **What this tells us:**
 
-| Factor                   | Effect on Escape Time                |
-| ------------------------ | ------------------------------------ |
-| **Larger ( \eta )**      | Faster escape (higher learning rate) |
-| **Smaller ( \lambda )**  | Faster escape (flatter barriers)     |
-| **Smaller ( \Delta U )** | Faster escape (shallower minima)     |
-| **Smaller ( L )**        | Faster escape (narrower barriers)    |
+| Factor                 | Effect on Escape Time                |
+| ---------------------- | ------------------------------------ |
+| **Larger $\eta$**      | Faster escape (higher learning rate) |
+| **Smaller $\lambda$**  | Faster escape (flatter barriers)     |
+| **Smaller $\Delta U$** | Faster escape (shallower minima)     |
+| **Smaller $L$**        | Faster escape (narrower barriers)    |
 
 **This is why:**
 
-* **Warm-up works:** Start with high ( \eta ) to escape
+* **Warm-up works:** Start with high $\eta$ to escape
 * **Cyclical LR works:** Re-escape after settling
 * **Momentum helps:** Adds "quantum" fluctuations
 
@@ -234,23 +259,29 @@ t_{\text{escape}}
 
 For a **quadratic loss**
 
-[
+$$
 U(w)=\frac{1}{2}\lambda w^2,
-]
+$$
 
 the quantum solution is:
 
 **Energy levels:**
 
-[
-E_n = \hbar\omega\left(n+\frac{1}{2}\right),
+$$
+E_n
+===
+
+\hbar\omega
+\left(
+n+\frac{1}{2}
+\right),
 \qquad
-\omega=\sqrt{\lambda/m}
-]
+\omega=\sqrt{\frac{\lambda}{m}}
+$$
 
 **Wavefunctions:**
 
-[
+$$
 \psi_n(w)
 =========
 
@@ -263,15 +294,15 @@ H_n
 \left(
 \sqrt{\frac{m\omega}{\hbar}}w
 \right)
-]
+$$
 
 **What this means in ML:**
 
 | Quantum State             | ML State                  | Meaning                         |
 | ------------------------- | ------------------------- | ------------------------------- |
-| **Ground state ((n=0))**  | Minimum                   | Model at the bottom of the bowl |
-| **First excited ((n=1))** | Local minimum             | Model in a slightly worse bowl  |
-| **High (n)**              | High loss                 | Model far from optimum          |
+| **Ground state ($n=0$)**  | Minimum                   | Model at the bottom of the bowl |
+| **First excited ($n=1$)** | Local minimum             | Model in a slightly worse bowl  |
+| **High $n$**              | High loss                 | Model far from optimum          |
 | **Tunneling**             | Transition between states | Model escaping local minima     |
 
 **The key insight:** Quantum mechanics says **any model can occupy any state** with some probability.
@@ -290,20 +321,26 @@ Here are some **quantum-inspired optimizers**.
 
 **Algorithm:**
 
-[
+$$
 w_{k+1}
 =======
 
 w_k-\eta\nabla U(w_k)
 +
 \sqrt{\eta T_k}\xi_k
-]
+$$
 
 **Cooling schedule:**
 
-[
-T_k=T_0\left(1-\frac{k}{K}\right)
-]
+$$
+T_k
+===
+
+T_0
+\left(
+1-\frac{k}{K}
+\right)
+$$
 
 **Physics analog:** Slow cooling of a metal to avoid defects.
 
@@ -315,16 +352,16 @@ T_k=T_0\left(1-\frac{k}{K}\right)
 
 **Algorithm:**
 
-[
+$$
 w_{k+1}
 =======
 
 w_k-\eta\nabla U(w_k)
 +
-\sigma\cdot\operatorname{Lévy}(\alpha)
-]
+\sigma\operatorname{Lévy}(\alpha)
+$$
 
-**Where:** ( \alpha\in(0,2] ) controls the tail heaviness.
+**Where:** $\alpha\in(0,2]$ controls the tail heaviness.
 
 ---
 
@@ -334,7 +371,7 @@ w_k-\eta\nabla U(w_k)
 
 **Algorithm:**
 
-[
+$$
 \nabla_{\text{quantum}}U
 ========================
 
@@ -343,7 +380,7 @@ w_k-\eta\nabla U(w_k)
 }{
 \int|\psi(w)|^2,dw
 }
-]
+$$
 
 **This smooths the loss landscape!**
 
@@ -353,17 +390,17 @@ w_k-\eta\nabla U(w_k)
 
 The transition from **classical** to **quantum** behavior occurs when:
 
-[
-\boxed{
-\eta\approx\frac{\hbar^2}{m\lambda}
-}
-]
+$$
+\eta
+\approx
+\frac{\hbar^2}{m\lambda}
+$$
 
-| Regime                                                           | Behavior                          | ML Equivalent             |
-| ---------------------------------------------------------------- | --------------------------------- | ------------------------- |
-| **Classical** ( \left(\eta\gg\frac{\hbar^2}{m\lambda}\right) )   | Particle obeys Newton's laws      | SGD with large LR         |
-| **Quantum** ( \left(\eta\approx\frac{\hbar^2}{m\lambda}\right) ) | Particle tunnels through barriers | Adam with moderate LR     |
-| **Too quantum** ( \left(\eta\ll\frac{\hbar^2}{m\lambda}\right) ) | Particle spreads everywhere       | SGD with tiny LR (random) |
+| Regime                                             | Behavior                          | ML Equivalent             |
+| -------------------------------------------------- | --------------------------------- | ------------------------- |
+| **Classical**: $\eta\gg\frac{\hbar^2}{m\lambda}$   | Particle obeys Newton's laws      | SGD with large LR         |
+| **Quantum**: $\eta\approx\frac{\hbar^2}{m\lambda}$ | Particle tunnels through barriers | Adam with moderate LR     |
+| **Too quantum**: $\eta\ll\frac{\hbar^2}{m\lambda}$ | Particle spreads everywhere       | SGD with tiny LR (random) |
 
 **The optimal regime:** **Quantum-classical crossover.**
 
@@ -377,31 +414,32 @@ The transition from **classical** to **quantum** behavior occurs when:
 
 ### *5.10 The Homework Assignment*
 
-> **Problem 1:** Derive the tunneling probability for a barrier of height ( \Delta U=1.0 ) and width ( L=0.1 ) with:
+> **Problem 1:** Derive the tunneling probability for a barrier of height $\Delta U=1.0$ and width $L=0.1$ with:
 >
-> * Learning rate ( \eta=0.01 )
-> * Curvature ( \lambda=1.0 )
-> * Current loss ( \mathcal{L}=0.5 )
+> * Learning rate $\eta=0.01$
+> * Curvature $\lambda=1.0$
+> * Current loss $\mathcal{L}=0.5$
 >
 > **Hint:** Use:
 >
-> [
-> \Gamma\propto
+> $$
+> \Gamma
+> \propto
 > \exp\left(
 > -\frac{2L}{\eta}
 > \sqrt{2\lambda(\Delta U-\mathcal{L})}
 > \right)
-> ]
+> $$
 
 > **Problem 2:** Design a quantum-inspired optimizer by adding Lévy noise to SGD.
 >
-> * Choose ( \alpha=1.5 ) (heavy tails)
+> * Choose $\alpha=1.5$ (heavy tails)
 > * Simulate escape from a local minimum
 > * Compare to standard SGD
 
 > **Problem 3:** Show that the ground state of the quantum harmonic oscillator is:
 >
-> [
+> $$
 > \psi_0(w)
 > =========
 >
@@ -409,7 +447,7 @@ The transition from **classical** to **quantum** behavior occurs when:
 > \frac{m\omega}{\pi\hbar}
 > \right)^{1/4}
 > e^{-m\omega w^2/(2\hbar)}
-> ]
+> $$
 >
 > **Interpretation:** What is the ML equivalent?
 
@@ -417,18 +455,20 @@ The transition from **classical** to **quantum** behavior occurs when:
 >
 > Derive the quantum-classical transition condition:
 >
-> [
+> $$
 > \eta_{\text{critical}}
 > ======================
 >
 > \frac{\hbar^2}{m\lambda}
-> ]
+> $$
 >
-> **Hint:** Use the uncertainty principle
+> **Hint:** Use the uncertainty principle:
 >
-> [
-> \Delta w,\Delta p\geq\frac{\hbar}{2}.
-> ]
+> $$
+> \Delta w,\Delta p
+> \geq
+> \frac{\hbar}{2}
+> $$
 
 ---
 
@@ -460,30 +500,26 @@ The student with the blue pen was back. She had a glint in her eye.
 
 I wrote on the board:
 
-[
-\boxed{
+$$
 \psi(w,t)
 =========
 
-\sum_n c_n\psi_n(w)e^{-iE_nt/\hbar}
-}
-]
+\sum_n
+c_n\psi_n(w)e^{-iE_nt/\hbar}
+$$
 
 **The wavefunction of a weight particle:**
 
-[
-\boxed{
+$$
 |\psi(w,t)|^2
 =============
 
 \text{Probability of finding the weight at }w\text{ at time }t
-}
-]
+$$
 
 **The Schrödinger equation for learning:**
 
-[
-\boxed{
+$$
 i\hbar\frac{\partial\psi}{\partial t}
 =====================================
 
@@ -493,22 +529,21 @@ i\hbar\frac{\partial\psi}{\partial t}
 +
 U(w)
 \right)\psi
-}
-]
+$$
 
 **And the cosmic truth:**
 
-[
-\boxed{\text{Learning is quantum.}}
-]
+$$
+\text{Learning is quantum.}
+$$
 
-[
-\boxed{\text{The universe is quantum.}}
-]
+$$
+\text{The universe is quantum.}
+$$
 
-[
-\boxed{\text{We were always doing quantum physics.}}
-]
+$$
+\text{We were always doing quantum physics.}
+$$
 
 ---
 
