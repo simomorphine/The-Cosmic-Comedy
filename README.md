@@ -62,7 +62,7 @@ Sometimes you discover that the beautiful equation you wrote at 3 a.m. needs to 
 
 That is part of doing science.
 
-The papers in this repository were generated with assistance from **DeepSeek**, an information-processing system, and then reviewed and developed as part of the larger project. They should therefore be treated as **exploratory research documents**, not as automatically validated scientific results.
+The papers in this repository were generated with assistance from **DeepSeek**, a fellow information-processing system, and then reviewed and developed as part of the larger project. They should therefore be treated as **exploratory research documents**, not as automatically validated scientific results.
 
 I spent quite some time reviewing the first paper, *The Complete Time-Dependent Covariance Matrix of the Stochastic Damped Harmonic Oscillator*. I have not yet had enough time to review the other papers with the same level of care.
 
