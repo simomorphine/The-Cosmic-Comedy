@@ -80,18 +80,18 @@ $$
 
 | Field                     | Loss Function                 | Parameters            | Minimization Method      |
 | ------------------------- | ----------------------------- | --------------------- | ------------------------ |
-| **Physics**               | Action ( S )                  | Path ( x(t) )         | Least action principle   |
-| **Mechanics**             | Potential ( U )               | Position ( q )        | Newton's second law      |
-| **Thermodynamics**        | Free energy ( F )             | State ( s )           | Free energy minimization |
-| **Quantum Mechanics**     | Energy ( E )                  | Wavefunction ( \psi ) | Schrödinger equation     |
-| **Statistical Mechanics** | Entropy ( S )                 | Distribution ( p )    | Maximum entropy          |
-| **Chemistry**             | Gibbs free energy ( G )       | Concentration ( c )   | Chemical equilibrium     |
-| **Biology**               | Fitness ( f )                 | Genes ( g )           | Natural selection        |
-| **Neuroscience**          | Prediction error ( \epsilon ) | Synapses ( s )        | Hebbian learning         |
-| **Psychology**            | Cognitive dissonance ( D )    | Beliefs ( b )         | Belief updating          |
-| **Economics**             | Utility ( U )                 | Price ( p )           | Market equilibrium       |
-| **Game Theory**           | Payoff ( \Pi )                | Strategy ( s )        | Nash equilibrium         |
-| **Machine Learning**      | Loss ( \mathcal{L} )          | Weights ( w )         | Gradient descent         |
+| **Physics**               | Action  $S$                   | Path  $x(t)$          | Least action principle   |
+| **Mechanics**             | Potential  $U$                | Position  $q$        | Newton's second law      |
+| **Thermodynamics**        | Free energy  $F$             | State $s$            | Free energy minimization |
+| **Quantum Mechanics**     | Energy  $E$                   | Wavefunction  $\psi$ | Schrödinger equation     |
+| **Statistical Mechanics** | Entropy $S$                  | Distribution  $p     | Maximum entropy          |
+| **Chemistry**             | Gibbs free energy  $G$        | Concentration  $c$    | Chemical equilibrium     |
+| **Biology**               | Fitness  $f$                  | Genes  $g$            | Natural selection        |
+| **Neuroscience**          | Prediction error  $\epsilon$  | Synapses  $s$         | Hebbian learning         |
+| **Psychology**            | Cognitive dissonance  $D$     | Beliefs  $b$          | Belief updating          |
+| **Economics**             | Utility  $U$                  | Price  $p$            | Market equilibrium       |
+| **Game Theory**           | Payoff  $\Pi$                 | Strategy  $s$         | Nash equilibrium         |
+| **Machine Learning**      | Loss  $\mathcal{L}$           | Weights  $w$          | Gradient descent         |
 
 **The cosmic joke:**
 
