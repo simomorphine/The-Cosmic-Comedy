@@ -145,7 +145,7 @@ $$
 \boxed{\frac{dp_i}{dt} = \sum_j \left( W_{ij} p_j - W_{ji} p_i \right)}
 $$
 
-**Where ( W_{ij} ) is the transition probability from ( j ) to ( i ).**
+**Where $W_{ij}$  is the transition probability from  $j$  to  $i$ .**
 
 **The gradient descent version:**
 
