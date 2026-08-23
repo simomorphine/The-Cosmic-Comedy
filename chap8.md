@@ -84,7 +84,7 @@ $$
 | **Mechanics**             | Potential  $U$                | Position  $q$        | Newton's second law      |
 | **Thermodynamics**        | Free energy  $F$             | State $s$            | Free energy minimization |
 | **Quantum Mechanics**     | Energy  $E$                   | Wavefunction  $\psi$ | Schrödinger equation     |
-| **Statistical Mechanics** | Entropy $S$                  | Distribution  $p     | Maximum entropy          |
+| **Statistical Mechanics** | Entropy $S$                  | Distribution  $p$     | Maximum entropy          |
 | **Chemistry**             | Gibbs free energy  $G$        | Concentration  $c$    | Chemical equilibrium     |
 | **Biology**               | Fitness  $f$                  | Genes  $g$            | Natural selection        |
 | **Neuroscience**          | Prediction error  $\epsilon$  | Synapses  $s$         | Hebbian learning         |
