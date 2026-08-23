@@ -170,3 +170,22 @@ There is only one final line:
 > **"We thought we were building machines that learn.**
 >
 > **The universe was just teaching us how it works."**
+
+---
+
+## Related Work
+
+> Cost Geometry
+
+[HST Geometry](https://github.com/simomorphine/humble_systems_theorey_cost_geometry_under_investigation/edit/main/README.md)
+
+> Tetris Game
+[Elwardi Tetris](https://github.com/simomorphine/ELWARDI-TETRIS)
+
+> Quantum Perceptron
+[Neural IPS](https://github.com/simomorphine/neural_ips)
+
+> Probabilistic Decision Tree
+[PDT](https://github.com/simomorphine/probabilistic_decision_tree)
+
+
