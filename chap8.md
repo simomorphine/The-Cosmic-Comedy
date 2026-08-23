@@ -115,8 +115,8 @@ $$
 
 | Term                   | Meaning           | Field              |
 | ---------------------- | ----------------- | ------------------ |
-| ( -\sum p_i \log p_i ) | Entropy           | Thermodynamics     |
-| ( -\sum p_i \log q_i ) | Cross-entropy     | Information theory |
+| $-\sum p_i \log p_i$ | Entropy           | Thermodynamics     |
+| $-\sum p_i \log q_i$  | Cross-entropy     | Information theory |
 | Constraints            | Conservation laws | Physics            |
 
 **The full equation:**
