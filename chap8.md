@@ -210,7 +210,9 @@ $$
 \boxed{
 \langle \phi \rangle =
 \begin{cases}
-0 & T > T_c \
+0 
+& 
+T > T_c \
 \pm \sqrt{\frac{a}{b}(T_c - T)} & T < T_c
 \end{cases}
 }
