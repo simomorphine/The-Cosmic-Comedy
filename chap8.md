@@ -239,7 +239,7 @@ $$
 \boxed{\mathcal{L}(t) = \mathcal{L}_{\infty} + A e^{-t/\tau}}
 $$
 
-| System     | ( \mathcal{L}_{\infty} ) | ( \tau )          |
+| System     |  $\mathcal{L}_{\infty}$ |  $\tau$           |
 | ---------- | ------------------------ | ----------------- |
 | Physics    | Ground state energy      | Relaxation time   |
 | Biology    | Carrying capacity        | Generation time   |
