@@ -176,7 +176,6 @@ There is only one final line:
 ## Related Work
 
 > Cost Geometry
-
 [HST Geometry](https://github.com/simomorphine/humble_systems_theorey_cost_geometry_under_investigation/edit/main/README.md)
 
 > Tetris Game
