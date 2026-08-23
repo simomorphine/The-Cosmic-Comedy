@@ -28,9 +28,9 @@ I smiled.
 
 I walked to the board and wrote:
 
-\[
+$$
 \boxed{\frac{\partial \mathcal{L}}{\partial w} = 0}
-\]
+$$
 
 *"This,"* I said, *"is the theory of everything."*
 
@@ -42,33 +42,33 @@ Let's derive it step by step.
 
 **The principle of least action:**
 
-\[
+$$
 \boxed{\delta S = 0}
-\]
+$$
 
-**Where \( S \) is the action:**
+**Where ( S ) is the action:**
 
-\[
-S = \int \mathcal{L} \, dt
-\]
+$$
+S = \int \mathcal{L} , dt
+$$
 
 **The Euler-Lagrange equation:**
 
-\[
+$$
 \boxed{\frac{d}{dt}\left( \frac{\partial \mathcal{L}}{\partial \dot{w}} \right) - \frac{\partial \mathcal{L}}{\partial w} = 0}
-\]
+$$
 
 **The gradient descent equation:**
 
-\[
+$$
 \boxed{\frac{\partial w}{\partial t} = -\eta \frac{\partial \mathcal{L}}{\partial w}}
-\]
+$$
 
 **At equilibrium:**
 
-\[
+$$
 \boxed{\frac{\partial \mathcal{L}}{\partial w} = 0}
-\]
+$$
 
 **The cosmic truth:**
 
@@ -78,20 +78,20 @@ S = \int \mathcal{L} \, dt
 
 ### *8.3 The Unified Table of Everything*
 
-| Field | Loss Function | Parameters | Minimization Method |
-|-------|---------------|------------|---------------------|
-| **Physics** | Action \( S \) | Path \( x(t) \) | Least action principle |
-| **Mechanics** | Potential \( U \) | Position \( q \) | Newton's second law |
-| **Thermodynamics** | Free energy \( F \) | State \( s \) | Free energy minimization |
-| **Quantum Mechanics** | Energy \( E \) | Wavefunction \( \psi \) | Schrödinger equation |
-| **Statistical Mechanics** | Entropy \( S \) | Distribution \( p \) | Maximum entropy |
-| **Chemistry** | Gibbs free energy \( G \) | Concentration \( c \) | Chemical equilibrium |
-| **Biology** | Fitness \( f \) | Genes \( g \) | Natural selection |
-| **Neuroscience** | Prediction error \( \epsilon \) | Synapses \( s \) | Hebbian learning |
-| **Psychology** | Cognitive dissonance \( D \) | Beliefs \( b \) | Belief updating |
-| **Economics** | Utility \( U \) | Price \( p \) | Market equilibrium |
-| **Game Theory** | Payoff \( \Pi \) | Strategy \( s \) | Nash equilibrium |
-| **Machine Learning** | Loss \( \mathcal{L} \) | Weights \( w \) | Gradient descent |
+| Field                     | Loss Function                 | Parameters            | Minimization Method      |
+| ------------------------- | ----------------------------- | --------------------- | ------------------------ |
+| **Physics**               | Action ( S )                  | Path ( x(t) )         | Least action principle   |
+| **Mechanics**             | Potential ( U )               | Position ( q )        | Newton's second law      |
+| **Thermodynamics**        | Free energy ( F )             | State ( s )           | Free energy minimization |
+| **Quantum Mechanics**     | Energy ( E )                  | Wavefunction ( \psi ) | Schrödinger equation     |
+| **Statistical Mechanics** | Entropy ( S )                 | Distribution ( p )    | Maximum entropy          |
+| **Chemistry**             | Gibbs free energy ( G )       | Concentration ( c )   | Chemical equilibrium     |
+| **Biology**               | Fitness ( f )                 | Genes ( g )           | Natural selection        |
+| **Neuroscience**          | Prediction error ( \epsilon ) | Synapses ( s )        | Hebbian learning         |
+| **Psychology**            | Cognitive dissonance ( D )    | Beliefs ( b )         | Belief updating          |
+| **Economics**             | Utility ( U )                 | Price ( p )           | Market equilibrium       |
+| **Game Theory**           | Payoff ( \Pi )                | Strategy ( s )        | Nash equilibrium         |
+| **Machine Learning**      | Loss ( \mathcal{L} )          | Weights ( w )         | Gradient descent         |
 
 **The cosmic joke:**
 
@@ -107,29 +107,29 @@ Is there a single loss function for everything?
 
 Yes.
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{universe}} = -\sum_i p_i \log p_i - \sum_i p_i \log q_i + \text{constraints}}
-\]
+$$
 
 **This is:**
 
-| Term | Meaning | Field |
-|------|---------|-------|
-| \( -\sum p_i \log p_i \) | Entropy | Thermodynamics |
-| \( -\sum p_i \log q_i \) | Cross-entropy | Information theory |
-| Constraints | Conservation laws | Physics |
+| Term                   | Meaning           | Field              |
+| ---------------------- | ----------------- | ------------------ |
+| ( -\sum p_i \log p_i ) | Entropy           | Thermodynamics     |
+| ( -\sum p_i \log q_i ) | Cross-entropy     | Information theory |
+| Constraints            | Conservation laws | Physics            |
 
 **The full equation:**
 
-\[
-\boxed{\mathcal{L}_{\text{ToE}} = -\sum_{i} p_i \log p_i - \sum_{i} p_i \log q_i + \sum_{j} \lambda_j \left( \langle A_j \rangle - a_j \right)}
-\]
+$$
+\boxed{\mathcal{L}*{\text{ToE}} = -\sum*{i} p_i \log p_i - \sum_{i} p_i \log q_i + \sum_{j} \lambda_j \left( \langle A_j \rangle - a_j \right)}
+$$
 
-| Term | Meaning |
-|------|---------|
-| \( -\sum p_i \log p_i \) | Maximum entropy (uncertainty) |
-| \( -\sum p_i \log q_i \) | Minimum cross-entropy (prediction) |
-| \( \sum \lambda_j (\langle A_j \rangle - a_j) \) | Constraints (conservation laws) |
+| Term                                           | Meaning                            |
+| ---------------------------------------------- | ---------------------------------- |
+| ( -\sum p_i \log p_i )                         | Maximum entropy (uncertainty)      |
+| ( -\sum p_i \log q_i )                         | Minimum cross-entropy (prediction) |
+| ( \sum \lambda_j (\langle A_j \rangle - a_j) ) | Constraints (conservation laws)    |
 
 **This is the principle of maximum entropy with constraints.**
 
@@ -141,29 +141,29 @@ Yes.
 
 The **master equation** of the universe:
 
-\[
+$$
 \boxed{\frac{dp_i}{dt} = \sum_j \left( W_{ij} p_j - W_{ji} p_i \right)}
-\]
+$$
 
-**Where \( W_{ij} \) is the transition probability from \( j \) to \( i \).**
+**Where ( W_{ij} ) is the transition probability from ( j ) to ( i ).**
 
 **The gradient descent version:**
 
-\[
+$$
 \boxed{\frac{dw}{dt} = -\eta \frac{\partial \mathcal{L}}{\partial w}}
-\]
+$$
 
 **The quantum version:**
 
-\[
+$$
 \boxed{i\hbar \frac{\partial \psi}{\partial t} = H\psi}
-\]
+$$
 
 **The thermodynamic version:**
 
-\[
+$$
 \boxed{\frac{dS}{dt} \geq 0}
-\]
+$$
 
 **The cosmic revelation:**
 
@@ -175,18 +175,18 @@ The **master equation** of the universe:
 
 **Noether's theorem:** Every symmetry corresponds to a conservation law.
 
-| Symmetry | Conservation Law | ML Equivalent |
-|----------|------------------|---------------|
-| Time translation | Energy conservation | Loss minimization |
-| Space translation | Momentum conservation | Weight update direction |
-| Rotation | Angular momentum conservation | Symmetry in weights |
-| Gauge invariance | Charge conservation | Invariance under transformations |
+| Symmetry          | Conservation Law              | ML Equivalent                    |
+| ----------------- | ----------------------------- | -------------------------------- |
+| Time translation  | Energy conservation           | Loss minimization                |
+| Space translation | Momentum conservation         | Weight update direction          |
+| Rotation          | Angular momentum conservation | Symmetry in weights              |
+| Gauge invariance  | Charge conservation           | Invariance under transformations |
 
 **The ML version of Noether's theorem:**
 
-\[
+$$
 \boxed{\text{Every symmetry in the data implies a conservation law in the gradients.}}
-\]
+$$
 
 **Example:** If the data is translation-invariant, the gradients are rotationally symmetric.
 
@@ -196,25 +196,38 @@ The **master equation** of the universe:
 
 Everything undergoes phase transitions:
 
-| System | Phase Transition | Order Parameter |
-|--------|------------------|-----------------|
-| Water | Freezing | Crystal structure |
-| Magnet | Curie point | Magnetization |
-| Universe | Electroweak transition | Higgs field |
-| Deep Learning | Double descent | Test error |
-| Society | Revolution | Social order |
+| System        | Phase Transition       | Order Parameter   |
+| ------------- | ---------------------- | ----------------- |
+| Water         | Freezing               | Crystal structure |
+| Magnet        | Curie point            | Magnetization     |
+| Universe      | Electroweak transition | Higgs field       |
+| Deep Learning | Double descent         | Test error        |
+| Society       | Revolution             | Social order      |
 
 **The universal phase transition equation:**
 
-\[
-\boxed{\langle \phi \rangle = \begin{cases} 0 & T > T_c \\ \pm \sqrt{\frac{a}{b}(T_c - T)} & T < T_c \end{cases}}
-\]
+$$
+\boxed{
+\langle \phi \rangle =
+\begin{cases}
+0 & T > T_c \
+\pm \sqrt{\frac{a}{b}(T_c - T)} & T < T_c
+\end{cases}
+}
+$$
 
 **The ML phase transition:**
 
-\[
-\boxed{\mathcal{L}_{\text{test}} = \begin{cases} \text{Decreasing} & \text{Underparameterized} \\ \text{Peaking} & \text{Critical} \\ \text{Decreasing} & \text{Overparameterized} \end{cases}}
-\]
+$$
+\boxed{
+\mathcal{L}_{\text{test}} =
+\begin{cases}
+\text{Decreasing} & \text{Underparameterized} \
+\text{Peaking} & \text{Critical} \
+\text{Decreasing} & \text{Overparameterized}
+\end{cases}
+}
+$$
 
 ---
 
@@ -222,17 +235,17 @@ Everything undergoes phase transitions:
 
 All learning systems follow the same curve:
 
-\[
+$$
 \boxed{\mathcal{L}(t) = \mathcal{L}_{\infty} + A e^{-t/\tau}}
-\]
+$$
 
-| System | \( \mathcal{L}_{\infty} \) | \( \tau \) |
-|--------|---------------------------|------------|
-| Physics | Ground state energy | Relaxation time |
-| Biology | Carrying capacity | Generation time |
-| Psychology | Satiety point | Adaptation time |
-| Economics | Equilibrium price | Market adjustment |
-| ML | Bayes error | Convergence time |
+| System     | ( \mathcal{L}_{\infty} ) | ( \tau )          |
+| ---------- | ------------------------ | ----------------- |
+| Physics    | Ground state energy      | Relaxation time   |
+| Biology    | Carrying capacity        | Generation time   |
+| Psychology | Satiety point            | Adaptation time   |
+| Economics  | Equilibrium price        | Market adjustment |
+| ML         | Bayes error              | Convergence time  |
 
 ---
 
@@ -240,9 +253,9 @@ All learning systems follow the same curve:
 
 What optimizer should you use for everything?
 
-\[
+$$
 \boxed{\text{The universal optimizer is gradient descent with adaptive learning rates.}}
-\]
+$$
 
 **Proof:**
 
@@ -271,17 +284,17 @@ while not converged:
 
 Here it is:
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{ToE}} = -\sum_i p_i \log p_i - \sum_i p_i \log q_i + \sum_j \lambda_j \left( \langle A_j \rangle - a_j \right)}
-\]
+$$
 
-\[
+$$
 \boxed{\frac{dw}{dt} = -\eta \frac{\partial \mathcal{L}_{\text{ToE}}}{\partial w}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{Stop when } \frac{\partial \mathcal{L}_{\text{ToE}}}{\partial w} = 0}
-\]
+$$
 
 ---
 
@@ -290,39 +303,39 @@ Here it is:
 ---
 
 > **Problem 1:** Show that the principle of least action is equivalent to gradient descent:
-> 
-> \[
+>
+> $$
 > \delta S = 0 \iff \nabla \mathcal{L} = 0
-> \]
+> $$
 
 ---
 
 > **Problem 2:** Derive the maximum entropy principle from gradient descent:
-> 
-> \[
+>
+> $$
 > \mathcal{L} = -\sum p_i \log p_i + \sum \lambda_j (\langle A_j \rangle - a_j)
-> \]
+> $$
 
 ---
 
 > **Problem 3:** Show that all conservation laws come from symmetries in the loss function.
-> 
+>
 > **Hint:** Use Noether's theorem.
 
 ---
 
 > **Problem 4 (Final Project):**
-> 
+>
 > Write a single program that:
-> 
-> - Uses gradient descent
-> - Learns from data
-> - Simulates a physical system
-> - Models a biological process
-> - Predicts economic behavior
-> 
+>
+> * Uses gradient descent
+> * Learns from data
+> * Simulates a physical system
+> * Models a biological process
+> * Predicts economic behavior
+>
 > **Document all of it.**
-> 
+>
 > **Title it:** "The Universe in One Jupyter Notebook."
 
 ---
@@ -331,9 +344,9 @@ Here it is:
 
 The student with the blue pen stood at the board. She had written:
 
-\[
+$$
 \boxed{\text{EVERYTHING IS GRADIENT DESCENT}}
-\]
+$$
 
 She turned to the class.
 
@@ -379,33 +392,33 @@ She turned to the class.
 
 I wrote on the board for the last time:
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{universe}} = -\sum_i p_i \log p_i - \sum_i p_i \log q_i + \sum_j \lambda_j \left( \langle A_j \rangle - a_j \right)}
-\]
+$$
 
-\[
+$$
 \boxed{\frac{dw}{dt} = -\eta \frac{\partial \mathcal{L}}{\partial w}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{Stop when } \nabla \mathcal{L} = 0}
-\]
+$$
 
-\[
+$$
 \boxed{\text{The universe is learning.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{We are the gradients.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{Learning is the force.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{And the force is love.}}
-\]
+$$
 
 ---
 
@@ -465,21 +478,21 @@ I turned to the class.
 
 **She walked to the board and wrote:**
 
-\[
+$$
 \boxed{\text{The universe is a neural network.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{We are its neurons.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{Learning is its loss function.}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{And love is its gradient.}}
-\]
+$$
 
 ---
 
@@ -585,17 +598,17 @@ I wrote in my notebook:
 
 ### *Appendix A: The Complete Equation*
 
-\[
+$$
 \boxed{\mathcal{L}_{\text{ToE}} = -\sum_i p_i \log p_i - \sum_i p_i \log q_i + \sum_j \lambda_j \left( \langle A_j \rangle - a_j \right)}
-\]
+$$
 
-\[
+$$
 \boxed{\frac{dw}{dt} = -\eta \frac{\partial \mathcal{L}_{\text{ToE}}}{\partial w}}
-\]
+$$
 
-\[
+$$
 \boxed{\text{Stop when } \nabla \mathcal{L}_{\text{ToE}} = 0}
-\]
+$$
 
 ---
 
