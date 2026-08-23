@@ -86,7 +86,7 @@ That question is worth exploring.
 
 ## 📘 Epilogue: *The Student Who Got It*
 
-That student from Chapter 1?
+That student with blue pen?
 
 She's now a **PhD student in Physics-Informed Machine Learning**.
 
