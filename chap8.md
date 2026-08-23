@@ -127,9 +127,9 @@ $$
 
 | Term                                           | Meaning                            |
 | ---------------------------------------------- | ---------------------------------- |
-| ( -\sum p_i \log p_i )                         | Maximum entropy (uncertainty)      |
-| ( -\sum p_i \log q_i )                         | Minimum cross-entropy (prediction) |
-| ( \sum \lambda_j (\langle A_j \rangle - a_j) ) | Constraints (conservation laws)    |
+| $-\sum p_i \log p_i$                         | Maximum entropy (uncertainty)      |
+| $-\sum p_i \log q_i$                         | Minimum cross-entropy (prediction) |
+| $\sum \lambda_j (\langle A_j \rangle - a_j)$ | Constraints (conservation laws)    |
 
 **This is the principle of maximum entropy with constraints.**
 
