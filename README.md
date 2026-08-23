@@ -158,8 +158,6 @@ I'm seeing it now.
 
 > **"To train a model, you must first become the model."**
 
-The sequel?
-
 
 ---
 
