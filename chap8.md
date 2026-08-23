@@ -222,8 +222,8 @@ $$
 \boxed{
 \mathcal{L}_{\text{test}} =
 \begin{cases}
-\text{Decreasing} & \text{Underparameterized} \
-\text{Peaking} & \text{Critical} \
+\text{Decreasing} & \text{Underparameterized} \\
+\text{Peaking} & \text{Critical} \\
 \text{Decreasing} & \text{Overparameterized}
 \end{cases}
 }
