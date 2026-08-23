@@ -7,155 +7,80 @@
 ## 📖 Prologue: The Joke
 
 > *A physicist walks into a machine learning conference.*
-> 
+>
 > *The ML researcher says: "We're trying to find the minimum of this high-dimensional function."*
-> 
+>
 > *The physicist says: "Oh, so you're doing thermodynamics. Let me tell you about entropy."*
-> 
+>
 > *The ML researcher says: "No, we're doing gradient descent."*
-> 
+>
 > *The physicist says: "Oh, so you're doing classical mechanics. Let me tell you about inertia."*
-> 
+>
 > *The ML researcher says: "Actually, we use stochastic gradient descent."*
-> 
+>
 > *The physicist says: "Oh, so you're doing statistical mechanics. Let me tell you about Brownian motion."*
-> 
+>
 > *The ML researcher says: "But we use GPUs."*
-> 
-> *The physicist says: "That's just parallel universes. Let me tell you about the multiverse..."*
-> 
+>
+> *The physicist pauses.*
+>
+> *"That's just parallel universes."*
+>
+> *And before the researcher can respond, the physicist begins explaining the multiverse...*
 
 **The cosmic joke?**
 
-**Machine learning was physics all along. It just didn't know it yet.**
+**Machine learning was doing physics all along. It just didn't know it yet.**
 
 ---
 
-## Chapter 1: *The Teacher's First Mistake*
+## 📚 A Note About the Papers
 
-I was teaching **gradient descent** to my students. I drew a **ball rolling down a hill**.
+Some papers have been added to *The Cosmic Joke* repository alongside the book.
 
-*"It's just like physics,"* I said.
+They are there for a reason—but they are **not meant to be taken as sacred texts**.
 
-A student raised her hand:
+Some are exploratory attempts to connect ideas from machine learning, dynamical systems, stochastic processes, physics, and information processing. They should be read as part of the experiment: ideas being pushed around, equations being tested, connections being imagined, and occasionally a mathematical rabbit hole becoming much deeper than expected.
 
-*"So... if I add momentum, it's like giving the ball mass?"*
+The work is messy.
 
-I froze.
+The ideas are imperfect.
 
-**That was the moment the joke began.**
+Some equations may eventually survive serious scrutiny. Others may not.
 
----
+And that's okay.
 
-## Chapter 2: *The Laws of Learning*
+**Life is not a perfectly optimized training run.**
 
-| Newton's Law     | ML Equivalent                     |
-| ---------------- | --------------------------------- |
-| ( F = ma )       | ( $\Delta w = -\eta \nabla L$ )     |
-| Inertia          | Momentum                          |
-| Friction         | Weight decay                      |
-| Thermal noise    | Mini-batch sampling               |
-| Potential energy | Loss landscape                    |
-| Escape velocity  | Learning rate for escaping minima |
+Sometimes the gradient points somewhere strange.
 
-**Every optimizer is a physical system pretending to be math.**
+Sometimes the model overfits.
 
----
+Sometimes the experiment breaks.
 
-## Chapter 3: *The Quantum Leap*
+Sometimes you discover that the beautiful equation you wrote at 3 a.m. needs to be completely rewritten in the morning.
 
-Then a student asked:
+That is part of doing science.
 
-*"What if the ball tunnels through the hill instead of rolling over it?"*
+The papers in this repository were generated with assistance from **DeepSeek**, an information-processing system, and then reviewed and developed as part of the larger project. They should therefore be treated as **exploratory research documents**, not as automatically validated scientific results.
 
-Everyone laughed.
+I spent quite some time reviewing the first paper, *The Complete Time-Dependent Covariance Matrix of the Stochastic Damped Harmonic Oscillator*. I have not yet had enough time to review the other papers with the same level of care.
 
-**Then someone invented Simulated Annealing.**
+I'm still working on them.
 
-The joke wrote itself.
+So consider these papers **maps of places we might explore**, rather than declarations that we have already arrived.
 
----
+The equations may be imperfect.
 
-## Chapter 4: *The Cosmology of Overfitting*
+The reasoning may contain mistakes.
 
-You know what overfitting is, in physics?
+The connections may turn out to be deeper than expected—or completely wrong.
 
-**It's the universe expanding too fast and cooling too quickly.**
+But somewhere inside that uncertainty is the interesting question:
 
-* **Early universe** = pretraining (everything random)
-* **Inflation** = rapid learning (exploding gradients)
-* **Structure formation** = feature learning (weights organize)
-* **Dark energy** = overfitting (model learns noise)
-* **Big freeze** = dead neurons (saturated activations)
+> **Why do mathematical structures developed to describe physical systems so often appear again when we try to understand learning?**
 
-**Your model is literally a mini-universe.**
-
----
-
-## Chapter 5: *The Entropy of Dropout*
-
-Dropout = **quenched disorder**.
-
-You randomly remove neurons to **force the system to find robust representations**.
-
-It's like teaching a child to walk with random leg numbness.
-
-**Cruel... but effective.**
-
----
-
-## Chapter 6: *The Love Story*
-
-Machine learning fell in love with physics because:
-
-* Physics asks: *"How do systems change?"*
-* ML asks: *"How do we make systems improve?"*
-
-**They're the same question.**
-
-Physics gives ML:
-
-* Mathematical rigor
-* Intuitive analogies
-* Centuries of insight
-
-ML gives physics:
-
-* A playground for high-dimensional dynamics
-* New questions about complexity
-* Applications of old theories
-
-**It's a match made in the universe.**
-
----
-
-## Chapter 7: *The Notebook Pages*
-
-*(From my actual teacher's notebook)*
-
-| Date        | Scribble                                                             |
-| ----------- | -------------------------------------------------------------------- |
-| **Jan 12**  | *"Loss landscape = potential energy. Students laughed."*             |
-| **Feb 3**   | *"Momentum is NOT just acceleration... it's history."*               |
-| **Mar 18**  | *"What if learning rate is temperature? Might be onto something..."* |
-| **Apr 22**  | *"Student asked about quantum annealing. I cried a little."*         |
-| **May 1**   | *"Everything is physics. Everything."*                               |
-| **June 15** | *"I think I'm going to write a book."*                               |
-
----
-
-## Chapter 8: *The Final Lesson*
-
-**In the end, it's all about energy.**
-
-* Training = energy minimization
-* Models = physical systems
-* Data = boundary conditions
-* GPUs = particle accelerators for weights
-
-And the **cosmic joke**?
-
-> *"We spent decades trying to teach machines to learn. We didn't realize we were just teaching them to do physics."*
+That question is worth exploring.
 
 ---
 
@@ -163,13 +88,21 @@ And the **cosmic joke**?
 
 That student from Chapter 1?
 
-She's now a **PhD student** in **Physics-informed Machine Learning**.
+She's now a **PhD student in Physics-Informed Machine Learning**.
 
 Her thesis title?
 
 > *"The Quantum Thermodynamics of Deep Neural Networks: A Unified Theory of Learning"*
 
 She dedicated it to her teacher.
+
+He smiled when he read the title.
+
+Then he opened the old notebook.
+
+There was only one sentence written on the final page:
+
+> *"I told you. It was physics."*
 
 **The notebook continues.**
 
@@ -183,6 +116,10 @@ She dedicated it to her teacher.
 >
 > *Maybe... they're the same question.*
 >
+> *Maybe learning is not something we invented.*
+>
+> *Maybe we simply discovered one of the ways the universe organizes itself.*
+>
 > *Maybe the joke's on us.*
 >
 > *And maybe that's the most beautiful part."*
@@ -191,35 +128,47 @@ She dedicated it to her teacher.
 
 ## 📖 Bonus: Things I Caught Myself Saying in Class
 
-* *"Batch size is NOT the mass, it's the number of universes you simulate."*
+* *"Batch size is NOT the mass. It's the number of universes you simulate."*
 * *"Adam optimizer is just a fancy friction coefficient."*
 * *"If your learning rate is too high, your model goes to the gym and tears a muscle."*
-* *"Weight decay is the universe's favorite way of saying 'stop being so confident'."*
+* *"Weight decay is the universe's favorite way of saying: 'Stop being so confident.'"*
 * *"Early stopping is when the simulation realizes it's a simulation."*
+* *"Momentum is what happens when your optimizer develops commitment issues."*
+* *"Regularization is physics telling your neural network to calm down."*
+* *"Overfitting is when the model memorizes the universe instead of understanding it."*
+* *"Underfitting is when the model looks at the universe and says: 'That's probably enough information.'"*
 
 ---
 
 # 🎬 Movie Adaptation?
 
-I'm seeing it now:
+I'm seeing it now.
 
-## **"The Cosmic Joke"**
+## **The Cosmic Joke**
 
-*Starring:*
+**Starring:**
 
 * **Iain Armitage** as the curious student
 * **Eddie Redmayne** as the physics professor
-* **Scarlett Johansson** as the loss landscape (in a green dress)
-* **Cillian Murphy** as Gradient Descent (the hero)
-* **Morgan Freeman** as the narrator (obviously)
+* **Scarlett Johansson** as the Loss Landscape, appearing mysteriously in a green dress
+* **Cillian Murphy** as Gradient Descent, the reluctant hero
+* **Morgan Freeman** as the narrator, obviously
 
-**Tagline:** *"To train a model, you must first become the model."*
+### *Tagline:*
+
+> **"To train a model, you must first become the model."**
+
+The sequel?
+
 
 ---
 
-## 📝 The Real Cosmic Joke
+# 📝 The Real Cosmic Joke
 
-At the end of the book, there's a **single line**:
+And at the very end of the book, after all the mathematics, physics, neural networks, experiments, failed ideas, strange equations, and questionable metaphors...
 
-> *"We thought we were building machines that learn.*
-> *The universe was just teaching us how it works."*
+There is only one final line:
+
+> **"We thought we were building machines that learn.**
+>
+> **The universe was just teaching us how it works."**
