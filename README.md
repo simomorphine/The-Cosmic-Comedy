@@ -36,7 +36,7 @@
 
 ## 📚 A Note About the Papers
 
-Some papers have been added to *The Cosmic Joke* repository alongside the book.
+Some papers have been added to *The Cosmic Comedy* repository alongside the book.
 
 They are there for a reason—but they are **not meant to be taken as sacred texts**.
 
