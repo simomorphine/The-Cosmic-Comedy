@@ -184,7 +184,11 @@ $$F = \text{sign}(y - w \cdot x)x$$
 
 $$\ell = \max(0, 1 - y(w \cdot x))$$
 
-$$F = \begin{cases} 0 & \text{if } y(w \cdot x) \geq 1 \\ yx & \text{if } y(w \cdot x) < 1 \end{cases}$$
+$$
+F = 
+\begin{cases} 0 & \text{if } y(w \cdot x) \geq 1 \\ 
+yx & \text{if } y(w \cdot x) < 1 \end{cases}
+$$
 
 **On/off force.** Like a bouncer at a club. If you're far enough from the boundary, there's no force at all.
 
