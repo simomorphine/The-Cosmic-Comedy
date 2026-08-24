@@ -234,11 +234,11 @@ $$\frac{d}{dt}(mw') = mw''$$
 
 **Step 3:**
 
-$$\frac{\partial L}{\partial w} = -\frac{\partial U}{\partial w} = -F$$
+$$\frac{\partial L}{\partial w} = -\frac{\partial U}{\partial w} = F$$
 
 **Putting it together:**
 
-$$mw'' - (-F) = 0$$
+$$mw'' - F = 0$$
 
 $$mw'' = F$$
 
