@@ -1,4 +1,4 @@
-# *The Cosmic Joke: How Machine Learning Fell in Love with Physics*
+# *The Cosmic Comedy: How Machine Learning Fell in Love with Physics*
 
 ### *From a Teacher's Notebook*
 
